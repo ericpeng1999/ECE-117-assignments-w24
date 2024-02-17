@@ -99,7 +99,7 @@ def post():
         response = make_response(jsonify(res), 201)
         response.headers.add(
             "Set-Cookie",
-            "session=" + token + "; Path=/; SameSite=None; Secure; HttpOnly",
+            "session=" + token + "; Path=/; SameSite=Strict; Secure; HttpOnly",
         )
         return response
 

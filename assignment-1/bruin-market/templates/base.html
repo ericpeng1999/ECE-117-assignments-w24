@@ -4,7 +4,7 @@
     <title>{% block title %}{% endblock %} | Bruin Market</title>
     <link rel="shortcut icon" href="/static/favicon.ico" />
     {% if csp %}
-    <meta http-equiv="Content-Security-Policy" content="script-src 'none';" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'none'; style-src 'self'" />
     {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
